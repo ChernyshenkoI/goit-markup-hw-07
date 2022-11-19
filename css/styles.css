@@ -132,7 +132,7 @@ body{
 }
 
 .modal-container {
-    padding: 40px;
+    padding: 30px;
   }
   .modal-title {
     font-weight: 700;
@@ -162,6 +162,7 @@ body{
     cursor: pointer;
     width: 448px;
     transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
   }
   .modal-comment {
     width: 100%;
@@ -171,12 +172,16 @@ body{
     border-radius: 4px;
     padding: 12px 16px;
     transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
   }
+
   .modal-comment::placeholder {
+    font-family: var(--main-font);
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5)
+    color: rgba(117, 117, 117, 0.5);
+ 
   }
 
   .modal-wrap {
@@ -196,9 +201,8 @@ body{
   }
   .modal-input:focus,
   .modal-comment:focus {
-    outline: 1px solid var(--accent-color);
+  border-color: var(--accent-color);
   }
-
 
   .policy-label {
     font-size: 14px;
@@ -223,14 +227,15 @@ body{
   .policy-label span {
     width: 16px;
     height: 15px;
-    border: 1px solid var(--text-color);
-    border-radius: 2px;
+    border: 2px solid var(--text-color);
+    border-radius: 3px;
     fill: transparent;
     margin-right: 7px;
     display: flex;
     align-items: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+
   }
   .policy-check:checked + .policy-label span{
     background-color: var(--accent-color);
@@ -243,6 +248,24 @@ body{
     display: block;
     margin: 0 auto;
     margin-top: 30px;
+    font-family: inherit;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: var(--accent-color);
+    color: var(--accent-text-color);
+    cursor: pointer;
+   
+    min-width: 216px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px 32px;
+   
+    border: none;
+
+
+
   }
 
 
@@ -746,10 +769,11 @@ background-color: var(--accent-color);
     margin-right: 15px;
     padding: 15px 16px;
     transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
   }
 
   .footer-form-input:focus {
-    outline: 1px solid var(--accent-color);
+   border-color: var(--accent-color);
   }
 
   .footer-icon-send {
@@ -777,13 +801,13 @@ background-color: var(--accent-color);
   background-color: var(--accent-color);
   color: var(--accent-text-color);
   cursor: pointer;
-  display: inline-block;
-  min-width: 216px;
+  display:flex;
   height: 50px;
   text-align: center;
   border-radius: 4px;
   padding: 10px 28px;
   border: none;
+  letter-spacing: 0.06em;
 }
 
 /* Portfolio */    /* Portfolio */   /* Portfolio */    /* Portfolio */
