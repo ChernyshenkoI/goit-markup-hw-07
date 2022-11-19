@@ -1,20 +1,11 @@
 :root {
-    --main-font: 'Roboto', sans-serif;
-
-    --bg-color: #FFFFFF;
-    --dark-bg-color: #2F303A; 
-    --light-bg-color: #F5F5F5;
-    --gray-bg-color:#F5F4FA;
-    --text-color:#212121;
-    --logo-black-color:#000000;
-    --light-text-color: #757575;
-    --accent-text-color:#FFFFFF;
-    --footer-text-color:rgba(255, 255, 255, 0.6);
-   
-    --accent-color: #2196F3;
-    --active-color: #188CE8;
-
-    --header-border-color: #ECECEC;
-
-    --border-color:rgba(238,238,238,1)
+  --main-color: #212121;
+  --secondary-color: #757575;
+  --accent-color: #2196f3;
+  --add-color: #ffffff;
+  --main-bgc-color: #ffffff;
+  --sec-bgc-color: #2f303a;
+  --add-bgc-color: #f5f4fa;
+  --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 250ms;
 }
