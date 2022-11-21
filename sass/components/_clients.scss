@@ -2,13 +2,13 @@
   background-color: var(--main-bgc-color);
   padding-bottom: 94px;
   padding-top: 94px;
-}
-.clients__title {
+&__title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}  
 }
 
 .clients-list {
@@ -22,9 +22,7 @@
     height: 60px;
     fill:currentColor;
 }
-}
-
-.clients-list__link {
+&__link {
   width:170px;
   height:92px;
   border: 1px solid #AFB1B8;
@@ -40,4 +38,7 @@
     border-color: var(--accent-color);
 }
 }
+}
+
+
 

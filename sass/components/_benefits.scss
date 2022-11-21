@@ -2,13 +2,12 @@
   background-color: var(--main-bgc-color);
   padding-top: 94px;
   padding-bottom: 94px;
-  color: red;
- 
+
+&__list {
+  display:flex;
 }
 
-.benefits-list {
-  display:flex;
-  &__title {
+&__title {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -16,22 +15,25 @@
     color: var(--main-color);
     margin-bottom: 10px;
   }
-  &__text {
+
+&__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
     width: 270px;
   }
-  &__item:not(:last-child) {
+
+&__item:not(:last-child) {
     margin-right: 30px;
   }
-}
 
-.benefits-icon {
-  height: 70px;
-  width: 70px;
-  &__wrap {
+&__icon{
+    height: 70px;
+    width: 70px;
+  }
+
+&__wrap {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,4 +43,6 @@
     border-radius: 4px;
     margin-bottom: 30px;
   }
+
 }
+
